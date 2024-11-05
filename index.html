@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Gestão de Grupos e Projetos</title>
+</head>
+
+<body>
+    <header>
+        <h1>Gestão de Grupos e Projetos</h1>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+        </nav>
+    </header>
+
+    <section id="criarGrupo">
+        <h2>Criar Grupo de Trabalho</h2>
+        <input type="text" id="nomeGrupo" placeholder="Nome do Grupo">
+        <button onclick="adicionarGrupo()">Adicionar Grupo</button>
+    </section>
+
+    <section id="adicionarParticipante">
+        <h2>Adicionar Participante</h2>
+        <input type="text" id="nomeParticipante" placeholder="Nome do Participante">
+        <select id="gruposAssociadosParticipante"></select>
+        <button onclick="adicionarParticipante()">Adicionar Participante</button>
+    </section>
+
+    <section id="criarProjeto">
+        <h2>Criar Projeto</h2>
+        <input type="text" id="nomeProjeto" placeholder="Nome do Projeto">
+        <select id="gruposAssociados"></select>
+        <button onclick="adicionarProjeto()">Adicionar Projeto</button>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

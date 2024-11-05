@@ -16,25 +16,32 @@
         </nav>
     </header>
 
-    <section id="criarGrupo">
-        <h2>Criar Grupo de Trabalho</h2>
-        <input type="text" id="nomeGrupo" placeholder="Nome do Grupo">
-        <button onclick="adicionarGrupo()">Adicionar Grupo</button>
-    </section>
+    <main>
+        <section id="criarGrupo">
+            <h2>Criar Grupo de Trabalho</h2>
+            <label for="nomeGrupo">Nome do Grupo</label>
+            <input type="text" id="nomeGrupo" placeholder="Digite o nome do grupo">
+            <button onclick="adicionarGrupo()">Adicionar Grupo</button>
+        </section>
 
-    <section id="adicionarParticipante">
-        <h2>Adicionar Participante</h2>
-        <input type="text" id="nomeParticipante" placeholder="Nome do Participante">
-        <select id="gruposAssociadosParticipante"></select>
-        <button onclick="adicionarParticipante()">Adicionar Participante</button>
-    </section>
+        <section id="adicionarParticipante">
+            <h2>Adicionar Participante</h2>
+            <label for="nomeParticipante">Nome do Participante</label>
+            <input type="text" id="nomeParticipante" placeholder="Digite o nome do participante">
+            <label for="gruposAssociadosParticipante">Grupo Associado</label>
+            <select id="gruposAssociadosParticipante"></select>
+            <button onclick="adicionarParticipante()">Adicionar Participante</button>
+        </section>
 
-    <section id="criarProjeto">
-        <h2>Criar Projeto</h2>
-        <input type="text" id="nomeProjeto" placeholder="Nome do Projeto">
-        <select id="gruposAssociados"></select>
-        <button onclick="adicionarProjeto()">Adicionar Projeto</button>
-    </section>
+        <section id="criarProjeto">
+            <h2>Criar Projeto</h2>
+            <label for="nomeProjeto">Nome do Projeto</label>
+            <input type="text" id="nomeProjeto" placeholder="Digite o nome do projeto">
+            <label for="gruposAssociados">Grupo Associado</label>
+            <select id="gruposAssociados"></select>
+            <button onclick="adicionarProjeto()">Adicionar Projeto</button>
+        </section>
+    </main>
 
     <script src="js/script.js"></script>
 </body>

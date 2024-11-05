@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const grupos = JSON.parse(localStorage.getItem("grupos")) || [];
+    const grupos = obterDadosLocalStorage("grupos");
     const urlParams = new URLSearchParams(window.location.search);
     const grupoIndex = urlParams.get("index");
 
@@ -15,3 +15,12 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+function obterDadosLocalStorage(chave) {
+    try {
+        return JSON.parse(localStorage.getItem(chave)) || [];
+    } catch (e) {
+        console.error(`Erro ao parsear os dados de ${chave}:`, e);
+        return [];
+    }
+}
